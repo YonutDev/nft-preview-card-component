@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+body {
+  background-color: hsl(217deg, 54%, 11%);
+}
+
+.card {
+  width: 20rem;
+  padding: 1rem;
+  border-radius: 15px;
+  background-color: hsl(216deg, 50%, 16%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card-image {
+  border-radius: 15px;
+  max-width: 100%;
+  max-height: 100%;
+  transition: 0.2s;
+  display: block;
+}
+
+.card-overlay {
+  position: relative;
+}
+.card-overlay:hover .card-image-overlay {
+  display: block;
+}
+
+.card-image-overlay {
+  border-radius: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 255, 247, 0.4);
+  display: none;
+}
+
+.card-image-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.card-title {
+  color: #fff;
+  font-family: "Outfit";
+  font-weight: 600;
+  font-size: 19px;
+  transition: 0.2s;
+}
+.card-title:hover {
+  color: #00fff7;
+  cursor: pointer;
+}
+
+.card-description {
+  color: hsl(215deg, 51%, 70%);
+  font-family: "Outfit";
+  font-weight: 300;
+}
+
+.card-price {
+  float: left;
+  display: inline-flex;
+  align-items: center;
+}
+.card-price p {
+  color: hsl(178deg, 100%, 50%);
+  font-family: "Outfit";
+  font-weight: 400;
+}
+
+.card-time {
+  float: right;
+  display: inline-flex;
+  align-items: center;
+}
+.card-time p {
+  color: hsl(215deg, 51%, 70%);
+  font-family: "Outfit";
+  font-weight: 400;
+}
+
+.card-author {
+  display: inline-flex;
+  align-items: center;
+}
+.card-author img {
+  width: 35px;
+  height: 35px;
+  border: 1.5px solid #fff;
+  border-radius: 50%;
+}
+.card-author p {
+  font-family: "Outfit";
+  font-weight: 400;
+  color: hsl(215deg, 51%, 70%);
+}
+.card-author p a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.2s;
+}
+.card-author p a:hover {
+  color: hsl(178deg, 100%, 50%);
+  cursor: pointer;
+}
+
+.card-separation-line {
+  border-top: 1px solid hsl(215deg, 32%, 27%);
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    width: 15rem;
+  }
+}/*# sourceMappingURL=style.css.map */
